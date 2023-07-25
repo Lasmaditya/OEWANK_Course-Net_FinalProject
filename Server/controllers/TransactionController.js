@@ -1,8 +1,15 @@
-const { Transaction } = require("../models");
+const { Transaction, Saving, Budget } = require("../models");
+
 
 class TransactionController {
-    static create(req, res) {
+    static createTopup(req, res) {
         
+    }
+
+    static createExpenditure(req, res) {
+        res.json({
+            message: "createExpenditure"
+        });
     }
 }
 

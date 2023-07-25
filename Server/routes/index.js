@@ -4,12 +4,14 @@ route.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
-const userRoutes = require("./user");
+// const userRoutes = require("./user");
 const transactionRoutes = require("./transaction");
-const historyRoutes = require("./history");
+// const historyRoutes = require("./history");
+// const typeRoutes = require("./type");
 
-route.use("/user", userRoutes);
-route.use("/transaction", transactionRoutes);
-route.use("/history", historyRoutes);
+// route.use("/users", userRoutes);
+route.use("/transactions", transactionRoutes);
+// route.use("/histories", historyRoutes);
+// route.use("/types", typeRoutes);
 
 module.exports = route;

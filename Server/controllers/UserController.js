@@ -1,4 +1,4 @@
-const { User } = require("../models");
+const { User, Saving, Budget } = require("../models");
 
 class AccController {
     static create(req, res) {
@@ -9,7 +9,7 @@ class AccController {
 
     }
 
-    static update(req, res) {
+    static updateUser(req, res) {
 
     }
 }
